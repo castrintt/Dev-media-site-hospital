@@ -37,15 +37,16 @@ header {
     align-items: center;
 }
 nav {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-left: 0vw;
 }
 nav a {
     text-align: center;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
-    padding: 12px;
+    font-size: 13.5px;
+    padding: 5px;
 
 }
 .cabecalho-items {
@@ -226,72 +227,20 @@ footer p {
 .nao {
     display: none;
 }
-
-
-@media (min-width:450px) and (max-width:600px){
-    header {
-        height: 100px;
-    }
-    .cabecalho {
-      
-        flex-direction: column;
-       
-    }
- 
-    .cabecalho-items img {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        border-bottom: 1px solid black;
-       
-    }
-
-    nav{
+@media (max-width:870px) and (min-width:320px){
+    #sumir {
         display: none;
     }
-    .nao {
-        display: block;
-    }
-    .nao a {
-        color: white;
-        
-    }
-    .titulos-textos p {
-        width: 400px;
-    }
-    .sobre-clinica {
-        display: block;
-        margin-left: 70px;
-        width: 400px;
-        
-    }
-    ul li {
-        line-height: 25px;
-    }
-    .items-clinica img {
-      display: none;
-    }
-    .box-imagens:not(.box-imagens:first-child){
-       margin-top: 40px;
+    .items-clinica:last-child {
+        justify-content: flex-start;
+        align-items: center;
        
-    }
-    iframe {
-        width: 420px;
-        height: 300px;
-    }
-}
-@media (min-width:601px) and (max-width:1024px) {
-    .cabecalho {
+    } 
+    .sobre-clinica{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .cabecalho-items:nth-child(2){
-        margin-left: 600px;
-    }
-    iframe {
-        width: 980px;
-        margin-left: 5px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 21.5%;
     }
 }
-
