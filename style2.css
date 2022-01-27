@@ -122,20 +122,106 @@ section:not(.container-preview) p{
     height: 240px;
 }
 table {
-    border: 1px solid black;
+    background:white ;
     width: 600px;
+    border-radius: 10px;
   
     
 }
-table img:nth-of-type(1){
-    height: 100px;
-}
-td, th {
-    border: 1px solid black;
-    padding: 5px;
+
+td {
+    border-radius: 5px;
+    padding: 9px;
     padding-bottom: 20px;
     padding-right: 20px;
 }
-td:nth-of-type(2n+1){
-    background-color: grey;
+
+tr:nth-of-type(2n-1){
+    background-color: #CDCDCD;
+}
+tr th {
+    border-radius: 5px;
+    background-color: #02C8D3;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+.box-sections img{
+    border-radius: 5px;
+    width: 220px;
+    height: 190px;
+
+}
+
+/* FOOTER  */
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    background-color: var(--color-footer);
+}
+footer img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 15px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+footer p {
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+    font-size: 13px;
+    color: white;
+}
+
+
+@media(min-width: 459px) and (max-width:855px){
+    .box-sections img {
+        display: none;
+    }
+    .container-preview {
+        display: none;
+    }
+    header {
+        margin-bottom: 40px;
+    }
+
+    section:not(.container-preview .organizaçao-sections) p {
+        text-align: center;
+        margin: auto;
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 10px;
+        width: 450px;
+        
+    }
+    table {
+        text-align: center;
+        margin: auto 25px auto auto ;
+        width: 450px;
+    }
+}
+@media (min-width:856px) and (max-width:1024px){
+    .organizacao-sections {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+    } 
+  
+    .box-sections img {
+        display: none;
+    }
+    
+}
+@media (min-width: 1025px) and  (max-width:1440px){
+    .box-sections img {
+        width: 340px;
+        height: 280px;
+    }
 }
