@@ -225,3 +225,9 @@ footer p {
         height: 280px;
     }
 }
+@media (min-width:1441px) and (max-width:1900px){
+    .box-sections img {
+        width: 400px;
+        height: 300px;
+    }
+}
