@@ -1,0 +1,20 @@
+{
+  "name": "dev-media-site-hospital",
+  "version": "1.0.0",
+  "description": "Dev-media-site-hospital",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castrintt/Dev-media-site-hospital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/castrintt/Dev-media-site-hospital/issues"
+  },
+  "homepage": "https://github.com/castrintt/Dev-media-site-hospital#readme"
+}
